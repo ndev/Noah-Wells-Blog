@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Noah Wells - Web Designer, Developer, Pianist</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700'
+  rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header id = "main_navigation" class="clearfix">
+    <%= link_to "Noah Wells", root_path, class: "name" %>
+    <nav class = "cl-effect-5">
+      <%= link_to "Articles", posts_path %>
+      <a href = "#" data-hover="Projects"><span>Projects</span></a>
+      <a href = "contact.html" data-hover="Contact"><span>Contact</span></a>
+    </nav>
+  </header>
+
+<%= yield %>
+
+<footer id = "main_footer">
+    <p class = "copyright">&copy; 2015 Noah Wells</p>
+    <nav>
+      <!-- <a href = "#"><i class="fa fa-twitter"></i></a>
+      <a href = "#"><i class="fa fa-facebook"></i></a> -->
+      <a href = "https://medium.com/@noah_wells" target = "_blank"><i class="fa fa-medium"></i></a>
+      <a href = "https://dribbble.com/noahwells" target = "_blank"><i class="fa fa-dribbble"></i></a>
+    </nav>
+  </footer>
+</body>
+</html>
