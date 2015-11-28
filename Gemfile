@@ -16,6 +16,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.4.1'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
@@ -28,6 +29,7 @@ group :development do
 end
 
 group :production do
+  gem 'sqlite3'
   gem 'pg'
   gem 'rails_12factor'
 end
