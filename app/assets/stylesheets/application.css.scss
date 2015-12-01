@@ -3,7 +3,7 @@
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #F15C58;
 $border-color: #e9e9e9;
 
 *,
@@ -12,6 +12,14 @@ $border-color: #e9e9e9;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+a {
+  transition: color 0.5s ease;
+
+}
+a:hover {
+  color: $highlight;
 }
 
 .notice, ,alert {
@@ -23,7 +31,9 @@ $border-color: #e9e9e9;
    box-sizing: border-box; // The padding that we had added doesn't add to the width of each column, but is still calculated
  }
 body {
-  font-family: 'Raleway', sans-serif;
+
+    font-family: 'Hind Vadodara', sans-serif;
+
 }
 
 .wrapper {
